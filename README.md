@@ -2,7 +2,9 @@
 
 > vue + router +webpack
 > 新手入门练手项目
-> 我学习vue项目 
+> 我学习vue项目  
+> [demo](http://text.dwxqnswxl.cn)
+
 
 ## Build Setup
 
