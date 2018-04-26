@@ -1,7 +1,8 @@
 # bbs
 
-> vue + webpack + baidumap
-> 百度地图开发测试
+> vue + router +webpack
+> 新手入门练手项目
+> 我学习vue项目 
 
 ## Build Setup
 
