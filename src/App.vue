@@ -1,16 +1,16 @@
 
 <template>
-  <div id="app" >
     <!-- style="background-color:#2c3e50" -->
-      <el-container>
+      <el-container  id="app" justify ="start">
         <el-header><elnav></elnav></el-header>
         <el-main id="app-main" justify="center">
-          <router-view></router-view>
+          <transition :name="fade">
+            <router-view></router-view>
+          </transition>
           <vue-particles color="#409EFF"></vue-particles>
         </el-main>
         <el-footer><elfoot/></el-footer>
-      </el-container>
-  </div>
+      </el-container> 
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style>
-#app-main{
+#app{
    font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,5 +40,11 @@ export default {
     /* position:absolute;
     z-index:1; */
     width: 100%;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
